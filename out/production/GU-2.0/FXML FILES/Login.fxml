@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginRoot" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="425.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginController">
+   <children>
+      <ImageView fitHeight="357.0" fitWidth="268.0" layoutX="208.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Logos/loginImage.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="NW_RESIZE" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="4.0" layoutY="56.0" prefHeight="33.0" prefWidth="67.0" text="TEAM">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="75.0" layoutY="59.0" text="CAVANAGH">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="75.0" layoutY="94.0" prefHeight="215.0" prefWidth="275.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints />
+          <RowConstraints maxHeight="62.29707336425781" minHeight="10.0" prefHeight="52.70292663574219" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="59.19415283203125" minHeight="10.0" prefHeight="33.79707336425781" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="74.38755798339844" minHeight="10.0" prefHeight="40.39488220214844" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="66.49269104003906" minHeight="10.0" prefHeight="28.605117797851562" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="67.07949829101562" minHeight="10.0" prefHeight="58.68463134765625" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="loginBtn" mnemonicParsing="false" prefHeight="43.0" prefWidth="275.0" text="Login" GridPane.rowIndex="5" />
+            <TextField fx:id="unameTxtField" promptText="Username" GridPane.rowIndex="2" />
+            <PasswordField fx:id="passField" prefHeight="19.0" prefWidth="275.0" promptText="Password" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#031443" height="57.0" layoutX="-4.0" layoutY="355.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="430.0" />
+      <GridPane layoutY="362.0" prefHeight="40.0" prefWidth="426.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="236.72129821777344" minWidth="10.0" prefWidth="104.28666687011719" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.7133331298828" minWidth="10.0" prefWidth="214.7133331298828" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.24203491210938" minWidth="10.0" prefWidth="106.77011108398438" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Hyperlink fx:id="registerLink" prefHeight="40.0" prefWidth="127.0" text="Not a member? Register " textFill="WHITE" textOverrun="CLIP" underline="true" wrapText="true">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="guestLink" layoutX="10.0" layoutY="17.0" prefHeight="26.0" prefWidth="155.0" text="Login as a guest" textFill="WHITE" textOverrun="CLIP" underline="true" wrapText="true" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Hyperlink>
+            <Label prefHeight="18.0" prefWidth="288.0" text="                              (or)" textFill="WHITE" textOverrun="CLIP" wrapText="true" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <ImageView fitHeight="23.0" fitWidth="24.0" layoutX="37.0" layoutY="191.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Logos/lockIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="14.0" layoutX="41.0" layoutY="157.0" opacity="0.4" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Logos/personIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
