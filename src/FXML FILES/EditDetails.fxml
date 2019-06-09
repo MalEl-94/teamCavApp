@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="675.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EditDetailsController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="675.0">
+         <children>
+            <ImageView fitHeight="145.0" fitWidth="128.0" layoutX="558.0" layoutY="137.0" opacity="0.16" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Logos/editIcon.png" />
+               </image>
+            </ImageView>
+            <GridPane layoutX="16.0" layoutY="223.0" prefHeight="281.0" prefWidth="323.0" AnchorPane.leftAnchor="16.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="107.22273254394531" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0" minWidth="10.0" prefWidth="222.7772674560547" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="fNameTxtField" GridPane.columnIndex="1" />
+                  <TextField fx:id="lNameTxtField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="dobTxtField" promptText="dd/mm/yy" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="contactNumbTxtField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="sAddressTxtField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="cityTxtField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label text="First Name" />
+                  <Label text="Last Name" GridPane.rowIndex="1" />
+                  <Label text="Date of Birth" GridPane.rowIndex="2" />
+                  <Label text="Contact Number" GridPane.rowIndex="3" />
+                  <Label text="Street Address" GridPane.rowIndex="4" />
+                  <Label GridPane.rowIndex="6" />
+                  <Label text="City" GridPane.rowIndex="5" />
+                  <Label text="Postcode" GridPane.rowIndex="6" />
+                  <TextField fx:id="pCodeTxtField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+            <Label layoutX="255.0" layoutY="11.0" prefHeight="36.0" prefWidth="184.0" text="UPDATE DETAILS" textAlignment="CENTER">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Button fx:id="updateBtn" layoutX="445.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="208.0" text="Update" />
+            <GridPane layoutX="355.0" layoutY="302.0" prefHeight="203.0" prefWidth="298.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="194.0" minWidth="10.0" prefWidth="118.91046142578125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="369.0" minWidth="10.0" prefWidth="187.58953857421875" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <TextField fx:id="wlsNumbTxtField" promptText="(Optional)" GridPane.columnIndex="1" />
+                  <TextField fx:id="uNameTxtField" prefHeight="27.0" prefWidth="261.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="WLS Number" />
+                  <Label GridPane.rowIndex="1" />
+                  <Label GridPane.rowIndex="3" />
+                  <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <PasswordField fx:id="confPasswordField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label text="Email " GridPane.rowIndex="1" />
+                  <Label text="Username" GridPane.rowIndex="2" />
+                  <Label text="Password" GridPane.rowIndex="3" />
+                  <Label text="Confirm Password" GridPane.rowIndex="4" />
+                  <TextField fx:id="emailTxtField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Button fx:id="bckBtn" layoutX="17.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="125.0" text="Home" />
+            <ImageView fitHeight="37.0" fitWidth="43.0" layoutX="604.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Logos/submitIcon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="19.0" layoutY="553.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+            <image>
+               <Image url="@../Logos/backIcon.png" />
+            </image>
+            </ImageView>
+            <TableView fx:id="memberTable" layoutX="5.0" layoutY="58.0" prefHeight="71.0" prefWidth="667.0">
+              <columns>
+                <TableColumn fx:id="firstNameCol" prefWidth="100.0" text="First Name" />
+                <TableColumn fx:id="lastNameCol" prefWidth="117.0" text="Last Name" />
+                  <TableColumn fx:id="dateOfBirthCol" prefWidth="107.0" text="Date of Birth" />
+                  <TableColumn fx:id="contactNumberCol" prefWidth="121.0" text="Contact Number" />
+                  <TableColumn fx:id="emailCol" minWidth="0.0" prefWidth="146.0" text="Email" />
+                  <TableColumn prefWidth="75.0" text="WLS#" />
+              </columns>
+            </TableView>
+            <TableView fx:id="addressTable" layoutX="5.0" layoutY="131.0" prefHeight="68.0" prefWidth="434.0">
+               <columns>
+                  <TableColumn fx:id="stAddressCol" prefWidth="146.0" text="Street Address" />
+                  <TableColumn fx:id="cityCol" prefWidth="129.96302795410156" text="City" />
+                  <TableColumn fx:id="pCodeCol" prefWidth="166.7264404296875" text="Post Code" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -1,0 +1,34 @@
+
+.gridPanel{
+
+-fx-background-color: #031443;
+}
+
+
+.button {
+
+     -fx-background-color: #031443;
+     -fx-text-fill: white;
+     -fx-font-size: 15px;
+     -fx-font-family: "Arial";
+     -fx-font-weight: bold;
+ }
+
+ .button: hover {
+
+      -fx-background-color: #00BFFF;
+  }
+
+  .button:pressed, .button:default:hover:pressed {
+    -fx-background-color: grey;
+    -fx-text-fill: #1d1d1d;
+  }
+
+  .text-field {
+      -fx-background-color: -fx-text-box-border, -fx-background ;
+      -fx-background-insets: 0, 0 0 1 0 ;
+      -fx-background-radius: 0 ;
+  }
+  .text-field:focused {
+      -fx-background-color: -fx-focus-color, -fx-background ;
+  }
